@@ -1,0 +1,33 @@
+{
+  "name": "callup",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha ./test.spec.js",
+    "build": "rollup --config rollup.config.js",
+    "prepublish": "npm run build && npm test"
+  },
+  "author": "frge <frge@mail.com>",
+  "devDependencies": {
+    "mocha": "^5.0.4",
+    "rollup": "^0.56.5",
+    "rollup-plugin-typescript2": "^0.12.0",
+    "typescript": "^2.7.2"
+  },
+  "description": "A simple calling parser",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frge/callup.git"
+  },
+  "keywords": [
+    "calling",
+    "call",
+    "expression",
+    "callup"
+  ],
+  "bugs": {
+    "url": "https://github.com/frge/callup/issues"
+  },
+  "homepage": "https://github.com/frge/callup#readme"
+}
